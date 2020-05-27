@@ -10,4 +10,13 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    protected function render($template, $contextData=[], $mergeData=[]) {
+        if (! array_key_exists('menu', $contextData)) $contextData['menu'] = 'home';
+        return view(
+            $template,
+            $contextData,
+            $mergeData
+        );
+    }
 }

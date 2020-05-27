@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/personal', 'PersonalController@index')->name('personal');
+Route::get('/education', 'EducationController@index')->name('education');
+Route::get('/experience', 'ExperienceController@index')->name('experience');
+Route::get('/skill', 'SkillController@index')->name('skill');
+Route::get('/contact', 'ContactController@index')->name('contact');
