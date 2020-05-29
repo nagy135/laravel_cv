@@ -14,8 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/personal', 'PersonalController@index')->name('personal');
-Route::get('/education', 'EducationController@index')->name('education');
-Route::get('/experience', 'ExperienceController@index')->name('experience');
-Route::get('/skill', 'SkillController@index')->name('skill');
 Route::get('/contact', 'ContactController@index')->name('contact');
+
+# form
+Route::get('/personal/nextStep', 'PersonalController@nextStep');
+Route::get('/personal', 'PersonalController@index')->name('personal');
+
+Route::get('/education/nextStep', 'EducationController@nextStep');
+Route::get('/education', 'EducationController@index')->name('education');
+
+/* Route::get('/experience/nextStep', 'ExperienceController@nextStep'); */
+Route::get('/experience', 'ExperienceController@index')->name('experience');
+
+/* Route::get('/skill/nextStep', 'SkillController@nextSTep'); */
+Route::get('/skill', 'SkillController@index')->name('skill');
+

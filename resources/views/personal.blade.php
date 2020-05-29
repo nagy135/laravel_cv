@@ -1,6 +1,6 @@
 @extends('create')
 @section('content')
-    <form action="/education">
+    <form action="/personal/nextStep">
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="gender" id="male_gender" value="male" required>
             <label class="form-check-label" for="male_gender">Male</label>

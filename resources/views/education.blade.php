@@ -1,6 +1,6 @@
 @extends('create')
 @section('content')
-    <form action="/experience">
+    <form action="/education/nextStep">
         <div class="form-row">
             <div class="form-grou col-md-6">
                 <label for="level">Highest degree reached</label>
