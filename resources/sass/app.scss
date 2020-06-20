@@ -1,13 +1,8 @@
-.school {
-    border: 1px solid black;
-    border-radius: 15px;
-    padding: 1em;
-    margin: 0.5em 0 0.5em 0;
-}
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
-.course {
-    border: 1px solid black;
-    border-radius: 15px;
-    padding: 1em;
-    margin: 0.5em 0 0.5em 0;
-}
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';

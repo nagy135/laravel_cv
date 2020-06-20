@@ -1,4 +1,4 @@
-@extends('base')
+@extends('layouts.app')
 @section('content')
-    <div>Contact</div>
+    <div class='container'>Contact</div>
 @endsection

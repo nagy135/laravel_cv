@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class CreateController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     protected function performNextStep(Request $request, $nextStep, $redirectRoute){
         $currentStep = $request->session()->get('steps_done', 0);
         if ($nextStep - $currentStep > 1){

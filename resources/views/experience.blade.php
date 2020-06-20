@@ -1,4 +1,4 @@
 @extends('create')
 @section('content')
-    <div>Experience</div>
+    <div class="container">Experience</div>
 @endsection
